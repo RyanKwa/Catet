@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C547C080288D20270085FDDE /* Catet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C547C07E288D20270085FDDE /* Catet.xcdatamodeld */; };
+		C547C083288D2F270085FDDE /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C082288D2F270085FDDE /* Learning.swift */; };
+		C547C085288D2FDA0085FDDE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C084288D2FDA0085FDDE /* Task.swift */; };
+		C547C087288D301D0085FDDE /* CatGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C086288D301D0085FDDE /* CatGallery.swift */; };
+		C547C08A288D32280085FDDE /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C089288D32280085FDDE /* CoreDataHelper.swift */; };
+		C547C08F288D40020085FDDE /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C08E288D40020085FDDE /* LearningViewModel.swift */; };
+		C563E555288A99D800F06EB8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E554288A99D800F06EB8 /* Theme.swift */; };
+		C563E557288A9EFE00F06EB8 /* CatGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */; };
+		C563E55A288A9F1E00F06EB8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E559288A9F1E00F06EB8 /* MainView.swift */; };
+		C563E55D288ACD8600F06EB8 /* LearningDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E55C288ACD8600F06EB8 /* LearningDetailView.swift */; };
+		C563E560288AD55100F06EB8 /* UIAppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E55F288AD55100F06EB8 /* UIAppearanceHelper.swift */; };
+		C563E562288B0BD700F06EB8 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E561288B0BD700F06EB8 /* TaskView.swift */; };
+		C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */; };
+		C563E567288BE45700F06EB8 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E566288BE45700F06EB8 /* TaskDetailView.swift */; };
+		C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4C92888ECEC002C2238 /* CatetApp.swift */; };
+		C572A4CC2888ECEC002C2238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4CB2888ECEC002C2238 /* ContentView.swift */; };
+		C572A4CE2888ECEE002C2238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4CD2888ECEE002C2238 /* Assets.xcassets */; };
+		C572A4D12888ECEE002C2238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */; };
+		C572A4D32888ECEE002C2238 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4D22888ECEE002C2238 /* Persistence.swift */; };
+		C572A4E02888ECEF002C2238 /* CatetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4DF2888ECEF002C2238 /* CatetTests.swift */; };
+		C572A4EA2888ECEF002C2238 /* CatetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4E92888ECEF002C2238 /* CatetUITests.swift */; };
+		C572A4EC2888ECEF002C2238 /* CatetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4EB2888ECEF002C2238 /* CatetUITestsLaunchTests.swift */; };
+		C572A4FD28897A1D002C2238 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4FC28897A1D002C2238 /* LearningView.swift */; };
+		C572A4FF288980F9002C2238 /* TopBarLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4FE288980F9002C2238 /* TopBarLearningView.swift */; };
+		C572A50228899468002C2238 /* LearningCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A50128899468002C2238 /* LearningCardView.swift */; };
+		C572A50628899F3E002C2238 /* ProgressArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A50528899F3E002C2238 /* ProgressArc.swift */; };
+		C5DB53FD288BF57E000E5FCF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FC288BF57E000E5FCF /* TextView.swift */; };
+		C5DB5400288C1FED000E5FCF /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FF288C1FED000E5FCF /* CompletionView.swift */; };
+		C5DB5403288C2574000E5FCF /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB5402288C2574000E5FCF /* Confetti.swift */; };
+		C5DB5405288C48FD000E5FCF /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB5404288C48FD000E5FCF /* RewardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C572A4DC2888ECEF002C2238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C572A4BE2888ECEC002C2238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C572A4C52888ECEC002C2238;
+			remoteInfo = Catet;
+		};
+		C572A4E62888ECEF002C2238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C572A4BE2888ECEC002C2238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C572A4C52888ECEC002C2238;
+			remoteInfo = Catet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C547C07F288D20270085FDDE /* Catet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catet.xcdatamodel; sourceTree = "<group>"; };
+		C547C082288D2F270085FDDE /* Learning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		C547C084288D2FDA0085FDDE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C547C086288D301D0085FDDE /* CatGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGallery.swift; sourceTree = "<group>"; };
+		C547C089288D32280085FDDE /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C547C08E288D40020085FDDE /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
+		C563E554288A99D800F06EB8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGalleryView.swift; sourceTree = "<group>"; };
+		C563E559288A9F1E00F06EB8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C563E55C288ACD8600F06EB8 /* LearningDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningDetailView.swift; sourceTree = "<group>"; };
+		C563E55F288AD55100F06EB8 /* UIAppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppearanceHelper.swift; sourceTree = "<group>"; };
+		C563E561288B0BD700F06EB8 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSheet.swift; sourceTree = "<group>"; };
+		C563E566288BE45700F06EB8 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		C572A4C62888ECEC002C2238 /* Catet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C572A4C92888ECEC002C2238 /* CatetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetApp.swift; sourceTree = "<group>"; };
+		C572A4CB2888ECEC002C2238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C572A4CD2888ECEE002C2238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C572A4D22888ECEE002C2238 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C572A4DB2888ECEF002C2238 /* CatetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C572A4DF2888ECEF002C2238 /* CatetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetTests.swift; sourceTree = "<group>"; };
+		C572A4E52888ECEF002C2238 /* CatetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C572A4E92888ECEF002C2238 /* CatetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetUITests.swift; sourceTree = "<group>"; };
+		C572A4EB2888ECEF002C2238 /* CatetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C572A4FC28897A1D002C2238 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		C572A4FE288980F9002C2238 /* TopBarLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarLearningView.swift; sourceTree = "<group>"; };
+		C572A50128899468002C2238 /* LearningCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCardView.swift; sourceTree = "<group>"; };
+		C572A50528899F3E002C2238 /* ProgressArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressArc.swift; sourceTree = "<group>"; };
+		C5DB53FC288BF57E000E5FCF /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		C5DB53FF288C1FED000E5FCF /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
+		C5DB5402288C2574000E5FCF /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
+		C5DB5404288C48FD000E5FCF /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C572A4C32888ECEC002C2238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4D82888ECEF002C2238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4E22888ECEF002C2238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C547C081288D2EEC0085FDDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C547C088288D321C0085FDDE /* CoreDataModel */,
+				C547C082288D2F270085FDDE /* Learning.swift */,
+				C547C084288D2FDA0085FDDE /* Task.swift */,
+				C547C086288D301D0085FDDE /* CatGallery.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C547C088288D321C0085FDDE /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C547C089288D32280085FDDE /* CoreDataHelper.swift */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		C547C08C288D3FE50085FDDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C547C08E288D40020085FDDE /* LearningViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C547C08D288D3FED0085FDDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C572A4FC28897A1D002C2238 /* LearningView.swift */,
+				C572A50128899468002C2238 /* LearningCardView.swift */,
+				C572A50528899F3E002C2238 /* ProgressArc.swift */,
+				C572A4FE288980F9002C2238 /* TopBarLearningView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C563E553288A999400F06EB8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C563E554288A99D800F06EB8 /* Theme.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C563E558288A9F0200F06EB8 /* CatGallery */ = {
+			isa = PBXGroup;
+			children = (
+				C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */,
+			);
+			path = CatGallery;
+			sourceTree = "<group>";
+		};
+		C563E55B288ACD7700F06EB8 /* LearningDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C563E55C288ACD8600F06EB8 /* LearningDetailView.swift */,
+				C563E561288B0BD700F06EB8 /* TaskView.swift */,
+			);
+			path = LearningDetail;
+			sourceTree = "<group>";
+		};
+		C563E55E288AD53700F06EB8 /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C563E55F288AD55100F06EB8 /* UIAppearanceHelper.swift */,
+				C5DB53FC288BF57E000E5FCF /* TextView.swift */,
+			);
+			path = UIHelper;
+			sourceTree = "<group>";
+		};
+		C563E563288BCC6F00F06EB8 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		C572A4BD2888ECEC002C2238 = {
+			isa = PBXGroup;
+			children = (
+				C572A4C82888ECEC002C2238 /* Catet */,
+				C572A4DE2888ECEF002C2238 /* CatetTests */,
+				C572A4E82888ECEF002C2238 /* CatetUITests */,
+				C572A4C72888ECEC002C2238 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C572A4C72888ECEC002C2238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C572A4C62888ECEC002C2238 /* Catet.app */,
+				C572A4DB2888ECEF002C2238 /* CatetTests.xctest */,
+				C572A4E52888ECEF002C2238 /* CatetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C572A4C82888ECEC002C2238 /* Catet */ = {
+			isa = PBXGroup;
+			children = (
+				C547C081288D2EEC0085FDDE /* Model */,
+				C5DB5407288C490B000E5FCF /* Reward */,
+				C5DB5401288C1FF4000E5FCF /* Completion */,
+				C5DB53FE288BF586000E5FCF /* TaskDetail */,
+				C563E563288BCC6F00F06EB8 /* AddTask */,
+				C563E55E288AD53700F06EB8 /* UIHelper */,
+				C563E55B288ACD7700F06EB8 /* LearningDetail */,
+				C563E558288A9F0200F06EB8 /* CatGallery */,
+				C563E553288A999400F06EB8 /* Constants */,
+				C572A50028899449002C2238 /* Learning */,
+				C572A4C92888ECEC002C2238 /* CatetApp.swift */,
+				C572A4CB2888ECEC002C2238 /* ContentView.swift */,
+				C572A4CD2888ECEE002C2238 /* Assets.xcassets */,
+				C572A4D22888ECEE002C2238 /* Persistence.swift */,
+				C547C07E288D20270085FDDE /* Catet.xcdatamodeld */,
+				C572A4CF2888ECEE002C2238 /* Preview Content */,
+				C563E559288A9F1E00F06EB8 /* MainView.swift */,
+			);
+			path = Catet;
+			sourceTree = "<group>";
+		};
+		C572A4CF2888ECEE002C2238 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C572A4DE2888ECEF002C2238 /* CatetTests */ = {
+			isa = PBXGroup;
+			children = (
+				C572A4DF2888ECEF002C2238 /* CatetTests.swift */,
+			);
+			path = CatetTests;
+			sourceTree = "<group>";
+		};
+		C572A4E82888ECEF002C2238 /* CatetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C572A4E92888ECEF002C2238 /* CatetUITests.swift */,
+				C572A4EB2888ECEF002C2238 /* CatetUITestsLaunchTests.swift */,
+			);
+			path = CatetUITests;
+			sourceTree = "<group>";
+		};
+		C572A50028899449002C2238 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				C547C08D288D3FED0085FDDE /* View */,
+				C547C08C288D3FE50085FDDE /* ViewModel */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		C5DB53FE288BF586000E5FCF /* TaskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C563E566288BE45700F06EB8 /* TaskDetailView.swift */,
+			);
+			path = TaskDetail;
+			sourceTree = "<group>";
+		};
+		C5DB5401288C1FF4000E5FCF /* Completion */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB53FF288C1FED000E5FCF /* CompletionView.swift */,
+				C5DB5402288C2574000E5FCF /* Confetti.swift */,
+			);
+			path = Completion;
+			sourceTree = "<group>";
+		};
+		C5DB5407288C490B000E5FCF /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB5404288C48FD000E5FCF /* RewardView.swift */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C572A4C52888ECEC002C2238 /* Catet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C572A4EF2888ECEF002C2238 /* Build configuration list for PBXNativeTarget "Catet" */;
+			buildPhases = (
+				C572A4C22888ECEC002C2238 /* Sources */,
+				C572A4C32888ECEC002C2238 /* Frameworks */,
+				C572A4C42888ECEC002C2238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Catet;
+			productName = Catet;
+			productReference = C572A4C62888ECEC002C2238 /* Catet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C572A4DA2888ECEF002C2238 /* CatetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C572A4F22888ECEF002C2238 /* Build configuration list for PBXNativeTarget "CatetTests" */;
+			buildPhases = (
+				C572A4D72888ECEF002C2238 /* Sources */,
+				C572A4D82888ECEF002C2238 /* Frameworks */,
+				C572A4D92888ECEF002C2238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C572A4DD2888ECEF002C2238 /* PBXTargetDependency */,
+			);
+			name = CatetTests;
+			productName = CatetTests;
+			productReference = C572A4DB2888ECEF002C2238 /* CatetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C572A4E42888ECEF002C2238 /* CatetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C572A4F52888ECEF002C2238 /* Build configuration list for PBXNativeTarget "CatetUITests" */;
+			buildPhases = (
+				C572A4E12888ECEF002C2238 /* Sources */,
+				C572A4E22888ECEF002C2238 /* Frameworks */,
+				C572A4E32888ECEF002C2238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C572A4E72888ECEF002C2238 /* PBXTargetDependency */,
+			);
+			name = CatetUITests;
+			productName = CatetUITests;
+			productReference = C572A4E52888ECEF002C2238 /* CatetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C572A4BE2888ECEC002C2238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C572A4C52888ECEC002C2238 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C572A4DA2888ECEF002C2238 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C572A4C52888ECEC002C2238;
+					};
+					C572A4E42888ECEF002C2238 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C572A4C52888ECEC002C2238;
+					};
+				};
+			};
+			buildConfigurationList = C572A4C12888ECEC002C2238 /* Build configuration list for PBXProject "Catet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C572A4BD2888ECEC002C2238;
+			productRefGroup = C572A4C72888ECEC002C2238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C572A4C52888ECEC002C2238 /* Catet */,
+				C572A4DA2888ECEF002C2238 /* CatetTests */,
+				C572A4E42888ECEF002C2238 /* CatetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C572A4C42888ECEC002C2238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C572A4D12888ECEE002C2238 /* Preview Assets.xcassets in Resources */,
+				C572A4CE2888ECEE002C2238 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4D92888ECEF002C2238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4E32888ECEF002C2238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C572A4C22888ECEC002C2238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547C087288D301D0085FDDE /* CatGallery.swift in Sources */,
+				C563E567288BE45700F06EB8 /* TaskDetailView.swift in Sources */,
+				C547C08F288D40020085FDDE /* LearningViewModel.swift in Sources */,
+				C563E560288AD55100F06EB8 /* UIAppearanceHelper.swift in Sources */,
+				C563E562288B0BD700F06EB8 /* TaskView.swift in Sources */,
+				C5DB5405288C48FD000E5FCF /* RewardView.swift in Sources */,
+				C547C085288D2FDA0085FDDE /* Task.swift in Sources */,
+				C5DB5403288C2574000E5FCF /* Confetti.swift in Sources */,
+				C563E555288A99D800F06EB8 /* Theme.swift in Sources */,
+				C547C083288D2F270085FDDE /* Learning.swift in Sources */,
+				C572A4FF288980F9002C2238 /* TopBarLearningView.swift in Sources */,
+				C572A4D32888ECEE002C2238 /* Persistence.swift in Sources */,
+				C5DB5400288C1FED000E5FCF /* CompletionView.swift in Sources */,
+				C572A4CC2888ECEC002C2238 /* ContentView.swift in Sources */,
+				C563E557288A9EFE00F06EB8 /* CatGalleryView.swift in Sources */,
+				C563E55D288ACD8600F06EB8 /* LearningDetailView.swift in Sources */,
+				C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */,
+				C572A4FD28897A1D002C2238 /* LearningView.swift in Sources */,
+				C5DB53FD288BF57E000E5FCF /* TextView.swift in Sources */,
+				C547C08A288D32280085FDDE /* CoreDataHelper.swift in Sources */,
+				C547C080288D20270085FDDE /* Catet.xcdatamodeld in Sources */,
+				C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */,
+				C563E55A288A9F1E00F06EB8 /* MainView.swift in Sources */,
+				C572A50228899468002C2238 /* LearningCardView.swift in Sources */,
+				C572A50628899F3E002C2238 /* ProgressArc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4D72888ECEF002C2238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C572A4E02888ECEF002C2238 /* CatetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C572A4E12888ECEF002C2238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C572A4EC2888ECEF002C2238 /* CatetUITestsLaunchTests.swift in Sources */,
+				C572A4EA2888ECEF002C2238 /* CatetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C572A4DD2888ECEF002C2238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C572A4C52888ECEC002C2238 /* Catet */;
+			targetProxy = C572A4DC2888ECEF002C2238 /* PBXContainerItemProxy */;
+		};
+		C572A4E72888ECEF002C2238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C572A4C52888ECEC002C2238 /* Catet */;
+			targetProxy = C572A4E62888ECEF002C2238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C572A4ED2888ECEF002C2238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C572A4EE2888ECEF002C2238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C572A4F02888ECEF002C2238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Catet/Preview Content\"";
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.Catet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C572A4F12888ECEF002C2238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Catet/Preview Content\"";
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.Catet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C572A4F32888ECEF002C2238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.CatetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Catet.app/Catet";
+			};
+			name = Debug;
+		};
+		C572A4F42888ECEF002C2238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.CatetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Catet.app/Catet";
+			};
+			name = Release;
+		};
+		C572A4F62888ECEF002C2238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.CatetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Catet;
+			};
+			name = Debug;
+		};
+		C572A4F72888ECEF002C2238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2V23RWBGR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NC2.CatetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Catet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C572A4C12888ECEC002C2238 /* Build configuration list for PBXProject "Catet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C572A4ED2888ECEF002C2238 /* Debug */,
+				C572A4EE2888ECEF002C2238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C572A4EF2888ECEF002C2238 /* Build configuration list for PBXNativeTarget "Catet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C572A4F02888ECEF002C2238 /* Debug */,
+				C572A4F12888ECEF002C2238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C572A4F22888ECEF002C2238 /* Build configuration list for PBXNativeTarget "CatetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C572A4F32888ECEF002C2238 /* Debug */,
+				C572A4F42888ECEF002C2238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C572A4F52888ECEF002C2238 /* Build configuration list for PBXNativeTarget "CatetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C572A4F62888ECEF002C2238 /* Debug */,
+				C572A4F72888ECEF002C2238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C547C07E288D20270085FDDE /* Catet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C547C07F288D20270085FDDE /* Catet.xcdatamodel */,
+			);
+			currentVersion = C547C07F288D20270085FDDE /* Catet.xcdatamodel */;
+			path = Catet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C572A4BE2888ECEC002C2238 /* Project object */;
+}
