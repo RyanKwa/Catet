@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct AddTaskSheet: View {
+    @ObservedObject var taskVM: TaskViewModel
+    @EnvironmentObject var learningVM: LearningViewModel
+    @State var learning: LearningEntity
     @Environment(\.dismiss) var dismiss
+    
     @State private var taskTitle = ""
     @State private var showReminder = false
+    @State private var reminder = Date()
     var body: some View {
+        
             NavigationView{
                 Form{
                     Section{
-                        TextField("", text: $taskTitle)
+                        TextField("", text: $taskTitle).foregroundColor(.black)
                     } header: {
                         Text("Set your task")
                     }
@@ -27,7 +33,7 @@ struct AddTaskSheet: View {
                                 .font(.system(size: 17))
                         }.tint(Color(Theme.accentColor.rawValue))
                         if showReminder {
-                            DatePicker("", selection: .constant(Date()))
+                            DatePicker("", selection: $reminder)
                         }
                     }
                 }
@@ -49,6 +55,17 @@ struct AddTaskSheet: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             print("Save Button")
+                            //MARK: Ternary
+                            if showReminder{
+                                taskVM.addTask(task: Task(title: taskTitle, reminder: reminder, priority: taskVM.taskList.count+1))
+//                                learningVM.updateLearningTask(learning: learning, taskList: taskVM.taskList)
+
+                            }
+                            else{
+                                taskVM.addTask(task: Task(title: taskTitle, reminder: nil, priority: taskVM.taskList.count+1))
+//                                learningVM.updateLearningTask(learning: learning, taskList: taskVM.taskList)
+
+                            }
                             dismiss()
                         } label: {
                             Text("Save")
@@ -59,6 +76,7 @@ struct AddTaskSheet: View {
 
                     }
                 }
+
                 .background(Color(uiColor: UIColor.systemGray5))
 
             }
@@ -68,6 +86,6 @@ struct AddTaskSheet: View {
 
 struct AddTaskSheet_Previews: PreviewProvider {
     static var previews: some View {
-        AddTaskSheet()
+        AddTaskSheet(taskVM: TaskViewModel(),learning: LearningEntity()).environmentObject(LearningViewModel())
     }
 }
