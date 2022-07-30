@@ -10,8 +10,9 @@ import SwiftUI
 struct CompletionView: View {
     @State var confetti = 20
     @State var isActive = false
-//    @State var scale = 1.0
-    @State var showAnimation = false
+    @State var learning: LearningEntity
+    @StateObject var catGalleryVM = CatGalleryViewModel()
+    @EnvironmentObject var learningVM: LearningViewModel
     var body: some View {
         NavigationView {
             VStack{
@@ -21,19 +22,15 @@ struct CompletionView: View {
                             .font(.system(size: 48.0))
                             .padding(.bottom, 30)
                             .animation(nil, value: UUID())
-                        if showAnimation {
-                            Confetti(height: Int(UIScreen.main.bounds.height/6))
-                                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/5)
-                                .transition(.move(edge: .bottom).combined(with: .opacity))
-        //                        .transition()
+                        Confetti(height: Int(UIScreen.main.bounds.height/6))
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/5)
 
-                        }
                         Text("You just finished")
                             .font(.system(size: 30.0))
                             .padding()
                             .animation(nil, value: UUID())
 
-                        Text("Core Data")
+                        Text("\(learning.wrappedTitle)")
                             .font(.system(size: 30.0))
                             .animation(nil, value: UUID())
 
@@ -55,25 +52,25 @@ struct CompletionView: View {
                         .foregroundColor(.white)
                         .background(Color(Theme.accentColor.rawValue))
                         .cornerRadius(10.0)
-                        NavigationLink(destination:RewardView(),isActive: $isActive) {
+                        NavigationLink(destination:RewardView(learning: learning, imageLoader: ImageLoader(url: catGalleryVM.catDataFromAPI[0].url ?? ""))
+                            .navigationBarHidden(true).environmentObject(learningVM),isActive: $isActive) {
                             
                         }
                     }.padding()
                     
-                }.onAppear{
-                    DispatchQueue.main.async {
-                        withAnimation(.linear(duration: 1.0)){
-                            showAnimation.toggle()
-                        }
-
-                    }
+                }
+            .navigationTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .onAppear{
+                catGalleryVM.fetchCatFromAPI()
             }
-        }.navigationBarHidden(true)
+        }
     }
 }
 
 struct CompletionView_Previews: PreviewProvider {
     static var previews: some View {
-        CompletionView()
+        CompletionView(learning: LearningEntity())
     }
 }
