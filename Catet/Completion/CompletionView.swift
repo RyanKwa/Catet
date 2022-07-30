@@ -40,7 +40,6 @@ struct CompletionView: View {
                     HStack{
                         Spacer()
                         Button {
-                            print("Next Button")
                             isActive = true
                         } label: {
                             HStack{

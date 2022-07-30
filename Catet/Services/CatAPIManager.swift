@@ -17,7 +17,6 @@ class CatAPIManager {
             //MARK: add http header for API auth
             request.addValue("2b67ad33-18f8-4076-9262-1e629b1dda75", forHTTPHeaderField: "x-api-key")
             request.httpMethod = "GET"
-            print("debug api \(request)")
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
 
                 guard let data = data else {
@@ -29,7 +28,6 @@ class CatAPIManager {
                     print("Failed to convert cat API data ")
                     return
                 }
-                print(catAPI)
                 onCompletion(catAPI)
             }
             task.resume()

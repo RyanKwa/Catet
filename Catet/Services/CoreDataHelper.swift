@@ -26,10 +26,8 @@ class CoreDataHelper{
     // Create background context to be used with core data operation
     func getBackgroundContext() -> NSManagedObjectContext {
         if let context = container?.newBackgroundContext() {
-            print("NEw bg context")
             return context
         } else {
-            print("existing context")
             return viewContext
         }
     }

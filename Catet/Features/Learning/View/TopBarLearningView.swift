@@ -29,7 +29,6 @@ struct TopBarLearningView: View {
                         .bold()
                         .font(.system(size: 17))
                     Button {
-                        print("Add Learning")
                         DispatchQueue.main.async {
                             showAddAlert.toggle()
                         }

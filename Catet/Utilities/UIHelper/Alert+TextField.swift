@@ -32,7 +32,6 @@ struct AlertControllerView: UIViewControllerRepresentable{
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
         
         if self.showAlert{
-            print("INI TEXT: \(learningTitleTextField)")
             let addAlert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
             addAlert.addTextField { (textField) in
                 textField.text = self.learningTitleTextField
@@ -45,7 +44,6 @@ struct AlertControllerView: UIViewControllerRepresentable{
                 if let textField = addAlert.textFields?.first, let text = textField.text {
                     self.learningTitleTextField = text
                 }
-                print("Add in alert")
                 if alertMode == .add{
                     learningViewModel.addLearning(title: learningTitleTextField)
                     self.learningTitleTextField = ""

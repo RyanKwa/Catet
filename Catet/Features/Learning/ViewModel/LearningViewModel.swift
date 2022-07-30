@@ -74,14 +74,11 @@ class LearningViewModel: ObservableObject {
             return
         }
         for task in learning.wrappedTasks {
-            print("Task: \(task)")
             NotificationManager.instance.removeNotifications(task: task)
         }
-//        withAnimation(.easeInOut(duration: 1.0)){
-            learningDAO.updateLearningStatus(learning: learning)
-            fetchOnGoingLearning()
-            fetchcompletedLearning()
-//        }
+        learningDAO.updateLearningStatus(learning: learning)
+        fetchOnGoingLearning()
+        fetchcompletedLearning()
     }
     func renameLearning(learning: LearningEntity, newTitle: String){
         learningDAO.renameLearningTitle(learning: learning, newTitle: newTitle)

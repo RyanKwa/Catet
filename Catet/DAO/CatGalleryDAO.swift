@@ -43,7 +43,6 @@ class CatGalleryDAO {
     func removeCatGallery(){
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CatGalleryEntity")
         let batchRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        print("ERROr disni")
         do{
             try coreDataHelper.getBackgroundContext().execute(batchRequest)
             coreDataHelper.saveContext()

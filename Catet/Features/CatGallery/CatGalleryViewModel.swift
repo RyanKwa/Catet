@@ -30,7 +30,6 @@ class CatGalleryViewModel: ObservableObject {
         let getCatData = { (cat: [CatAPI]) in
             DispatchQueue.main.async {
                 self.catDataFromAPI = cat
-                print("Debug API ARRAY COK \(self.catDataFromAPI)")
             }
         }
         catAPIManager.fetchCat(breed: catBreeds.randomElement()!,onCompletion: getCatData)

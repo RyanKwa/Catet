@@ -50,14 +50,12 @@ struct LearningView: View {
                             }
                             .swipeActions(allowsFullSwipe: false) {
                                 Button(role: .destructive) {
-                                    print("Delete")
                                     showDeleteAlert.toggle()
                                     selectedLearning = ongoing
                                 } label: {
                                     Text("Delete")
                                 }
                                 Button {
-                                    print("Rename")
                                     showRenameAlert.toggle()
                                     selectedLearning = ongoing
                                     learningTitle = ongoing.wrappedTitle
@@ -79,7 +77,6 @@ struct LearningView: View {
                     }
                     .alert("Delete Learning", isPresented: $showDeleteAlert, actions: {
                         Button(role: .destructive) {
-                            print("Delete")
                             showDeleteAlert = false
                             learningVM.deleteLearning(learning: selectedLearning!)
                             
@@ -87,7 +84,6 @@ struct LearningView: View {
                             Text("Delete").textCase(.none)
                         }
                         Button(role: .cancel) {
-                            print("Cancel")
                         } label: {
                             Text("Cancel").textCase(.none)
                         }
@@ -114,7 +110,6 @@ struct LearningView: View {
                             }
                             .swipeActions(allowsFullSwipe: false){
                                 Button(role: .destructive) {
-                                    print("Delete")
                                     showDeleteAlert.toggle()
                                     selectedLearning = completed
                                 } label: {

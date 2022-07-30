@@ -258,6 +258,7 @@
 		C56A773628955DA000A863A1 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				C56A77372895700E00A863A1 /* CatGalleryDAO.swift */,
 				C56A773428955D9900A863A1 /* TaskDAO.swift */,
 				C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */,
 			);
@@ -267,7 +268,6 @@
 		C572A4BD2888ECEC002C2238 = {
 			isa = PBXGroup;
 			children = (
-				C56A77372895700E00A863A1 /* CatGalleryDAO.swift */,
 				C572A4C82888ECEC002C2238 /* Catet */,
 				C572A4DE2888ECEF002C2238 /* CatetTests */,
 				C572A4E82888ECEF002C2238 /* CatetUITests */,

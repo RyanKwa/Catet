@@ -37,7 +37,6 @@ struct RewardView: View {
                 }
             }
             Button{
-                print("Bookmark")
                 saveToCatGallery.toggle()
             }label: {
                 Image(systemName: saveToCatGallery ? "heart.fill" : "heart")
@@ -50,7 +49,6 @@ struct RewardView: View {
             Spacer()
 
             Button{
-                print("Continue")
                 if saveToCatGallery {
                     catGalleyVM.addCatGallery(catGallery: CatGallery(url: imageLoader.url, dateFinished: Date(), goalCompleted: learning.title))
                 }

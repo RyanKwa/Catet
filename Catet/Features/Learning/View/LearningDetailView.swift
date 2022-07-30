@@ -64,7 +64,6 @@ struct LearningDetailView: View {
                                     .swipeActions(allowsFullSwipe: false) {
                                         
                                     Button(role: .destructive) {
-                                        print("Delete")
                                         showDeleteAlert.toggle()
                                         selectedTask = taskData
                                     } label: {
@@ -77,21 +76,17 @@ struct LearningDetailView: View {
                         //MARK: Rearrange Task
                         .onMove {source, dest in
                             taskVM.reArrangeTask(fromIndex: source, toIndex: dest)
-                            print("UPdate")
-                            print(source)
-                            print(dest)
                         }
                         //MARK: Delete Task
                         .alert("Delete Task", isPresented: $showDeleteAlert, actions: {
                             Button(role: .destructive) {
-                                print("Delete")
                                 showDeleteAlert = false
                                 taskVM.removeTask(task: selectedTask!)
                             } label: {
                                 Text("Delete").textCase(.none)
                             }
                             Button(role: .cancel) {
-                                print("Cancel")
+
                             } label: {
                                 Text("Cancel").textCase(.none)
                             }
@@ -113,7 +108,6 @@ struct LearningDetailView: View {
                         Spacer()
                         //MARK: Add task button
                         Button {
-                            print("Add Task")
                             presentAddSheet.toggle()
                         } label: {
                             Label("Add new Task", systemImage: "plus")
@@ -148,7 +142,6 @@ struct LearningDetailView: View {
         .background(Color(uiColor: UIColor.systemGray5))
         .onAppear{
             UIAppearanceHelper.setupNavigationTitle(withColor: .white)
-            print("EditMODE: \(editMode)")
             taskVM.currentLearning(learning: learning)
             taskVM.fetchTasks()
         }

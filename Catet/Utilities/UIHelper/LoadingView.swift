@@ -17,7 +17,6 @@ struct LoadingView: View {
                 .animation(
                     .spring(response: 0.2, dampingFraction: 0.3, blendDuration: 1).repeatForever(autoreverses: true),
                     value: showAnimation)
-//            ProgressView()
         }.onAppear{
             showAnimation.toggle()
         }
