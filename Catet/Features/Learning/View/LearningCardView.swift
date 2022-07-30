@@ -10,8 +10,18 @@ import SwiftUI
 struct LearningCardView: View {
     var learningTitle: String
     var learningGoal: String
-    var finishedTask: Int = 4
-    var totalTask: Int = 5
+    var task: [TaskEntity]
+    @EnvironmentObject var learningViewModel: LearningViewModel
+    
+    private var completion: Int {
+        return learningViewModel.calculateLearningCompletion(tasks: task)
+    }
+    private var finishedTask: Int {
+        return learningViewModel.getFinishedTask(tasks: task)
+    }
+    private var totalTask: Int {
+        return task.count
+    }
     
     var body: some View {
         HStack{
@@ -26,7 +36,7 @@ struct LearningCardView: View {
                     .font(.subheadline)
             }.padding(.vertical)
             Spacer()
-            if calculateTaskProgress() < 100 {
+            if completion < 100{
                 ZStack{
                     Circle()
                         .frame(width: 60, alignment: .center)
@@ -34,7 +44,7 @@ struct LearningCardView: View {
                     Circle()
                         .strokeBorder(Color(Theme.darkgreen.rawValue).opacity(0.25), lineWidth: 7, antialiased: true)
                         .overlay{
-                            Text("\(calculateTaskProgress())%")
+                            Text("\(completion)%")
                                 .font(.subheadline)
                         }
                         .overlay{
@@ -46,23 +56,18 @@ struct LearningCardView: View {
                         .frame(width: 60, alignment: .center)
                 }
             }
-            else if calculateTaskProgress() == 100 {
+            else if completion == 100 {
                 Image(systemName: "checkmark")
                     .imageScale(.large)
                     .font(.system(size: 35))
                     .foregroundColor(Color(Theme.accentColor.rawValue))
-//                    .background(Color.red)
             }
         }
-    }
-
-    func calculateTaskProgress() -> Int {
-        return Int(Double(finishedTask)/Double(totalTask) * 100)
     }
 }
 
 struct LearningCardView_Previews: PreviewProvider {
     static var previews: some View {
-        LearningCardView(learningTitle: "CoreData", learningGoal: "I will build a core data app with CRUD functionality", finishedTask: 5, totalTask: 5)
+        LearningCardView(learningTitle: "CoreData", learningGoal: "I will build a core data app with CRUD functionality", task: [])
     }
 }
