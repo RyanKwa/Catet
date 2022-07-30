@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CatGalleryEntity" representedClassName="CatGalleryEntity" syncable="YES" codeGenerationType="class">
+    <entity name="CatGalleryEntity" representedClassName="CatGalleryEntity" syncable="YES">
         <attribute name="dateFinished" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="goalCompleted" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="url" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="LearningEntity" representedClassName="LearningEntity" syncable="YES" codeGenerationType="class">
+    <entity name="LearningEntity" representedClassName="LearningEntity" syncable="YES">
         <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="goal" optional="YES" attributeType="String"/>
         <attribute name="hasCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
@@ -13,7 +14,7 @@
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="learning" inverseEntity="TaskEntity"/>
     </entity>
-    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES" codeGenerationType="class">
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES">
         <attribute name="documentation" optional="YES" attributeType="String"/>
         <attribute name="hasFinished" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -23,8 +24,8 @@
         <relationship name="learning" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LearningEntity" inverseName="tasks" inverseEntity="LearningEntity"/>
     </entity>
     <elements>
-        <element name="LearningEntity" positionX="-63" positionY="-9" width="128" height="133"/>
-        <element name="TaskEntity" positionX="174.69921875" positionY="-119.96484375" width="128" height="148"/>
-        <element name="CatGalleryEntity" positionX="-56.1328125" positionY="-119.28125" width="128" height="88"/>
+        <element name="CatGalleryEntity" positionX="-56.1328125" positionY="-119.28125" width="128" height="89"/>
+        <element name="LearningEntity" positionX="-63" positionY="-9" width="128" height="119"/>
+        <element name="TaskEntity" positionX="174.69921875" positionY="-119.96484375" width="128" height="134"/>
     </elements>
 </model>

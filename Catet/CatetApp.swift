@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct CatetApp: App {
-//    let persistenceController = PersistenceController.shared
-
+    @ObservedObject var appState = AppState()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             MainView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(appState)
         }
     }
 }

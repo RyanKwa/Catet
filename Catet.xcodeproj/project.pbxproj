@@ -13,6 +13,19 @@
 		C547C087288D301D0085FDDE /* CatGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C086288D301D0085FDDE /* CatGallery.swift */; };
 		C547C08A288D32280085FDDE /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C089288D32280085FDDE /* CoreDataHelper.swift */; };
 		C547C08F288D40020085FDDE /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C08E288D40020085FDDE /* LearningViewModel.swift */; };
+		C547C091288D70160085FDDE /* Alert+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C090288D70160085FDDE /* Alert+TextField.swift */; };
+		C56229A9289162E400FC181B /* LearningEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A3289162E400FC181B /* LearningEntity+CoreDataClass.swift */; };
+		C56229AA289162E400FC181B /* LearningEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A4289162E400FC181B /* LearningEntity+CoreDataProperties.swift */; };
+		C56229AB289162E400FC181B /* CatGalleryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A5289162E400FC181B /* CatGalleryEntity+CoreDataClass.swift */; };
+		C56229AC289162E400FC181B /* CatGalleryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A6289162E400FC181B /* CatGalleryEntity+CoreDataProperties.swift */; };
+		C56229AD289162E400FC181B /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A7289162E400FC181B /* TaskEntity+CoreDataClass.swift */; };
+		C56229AE289162E400FC181B /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229A8289162E400FC181B /* TaskEntity+CoreDataProperties.swift */; };
+		C56229B0289163BE00FC181B /* CatDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229AF289163BE00FC181B /* CatDisplayView.swift */; };
+		C56229B22891661F00FC181B /* CatGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229B12891661F00FC181B /* CatGalleryViewModel.swift */; };
+		C56229B52891680C00FC181B /* CatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229B42891680C00FC181B /* CatAPI.swift */; };
+		C56229B828916B0600FC181B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229B728916B0600FC181B /* ImageLoader.swift */; };
+		C56229BA28916FC200FC181B /* CatAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229B928916FC200FC181B /* CatAPIManager.swift */; };
+		C56229BC28918A5400FC181B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56229BB28918A5400FC181B /* LoadingView.swift */; };
 		C563E555288A99D800F06EB8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E554288A99D800F06EB8 /* Theme.swift */; };
 		C563E557288A9EFE00F06EB8 /* CatGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */; };
 		C563E55A288A9F1E00F06EB8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E559288A9F1E00F06EB8 /* MainView.swift */; };
@@ -22,10 +35,8 @@
 		C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */; };
 		C563E567288BE45700F06EB8 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E566288BE45700F06EB8 /* TaskDetailView.swift */; };
 		C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4C92888ECEC002C2238 /* CatetApp.swift */; };
-		C572A4CC2888ECEC002C2238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4CB2888ECEC002C2238 /* ContentView.swift */; };
 		C572A4CE2888ECEE002C2238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4CD2888ECEE002C2238 /* Assets.xcassets */; };
 		C572A4D12888ECEE002C2238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */; };
-		C572A4D32888ECEE002C2238 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4D22888ECEE002C2238 /* Persistence.swift */; };
 		C572A4E02888ECEF002C2238 /* CatetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4DF2888ECEF002C2238 /* CatetTests.swift */; };
 		C572A4EA2888ECEF002C2238 /* CatetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4E92888ECEF002C2238 /* CatetUITests.swift */; };
 		C572A4EC2888ECEF002C2238 /* CatetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4EB2888ECEF002C2238 /* CatetUITestsLaunchTests.swift */; };
@@ -33,10 +44,18 @@
 		C572A4FF288980F9002C2238 /* TopBarLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4FE288980F9002C2238 /* TopBarLearningView.swift */; };
 		C572A50228899468002C2238 /* LearningCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A50128899468002C2238 /* LearningCardView.swift */; };
 		C572A50628899F3E002C2238 /* ProgressArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A50528899F3E002C2238 /* ProgressArc.swift */; };
+		C57CFA0C2890184C00FDCB0D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */; };
+		C57CFA0E289028BD00FDCB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CFA0D289028BD00FDCB0D /* AppDelegate.swift */; };
 		C5DB53FD288BF57E000E5FCF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FC288BF57E000E5FCF /* TextView.swift */; };
 		C5DB5400288C1FED000E5FCF /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FF288C1FED000E5FCF /* CompletionView.swift */; };
 		C5DB5403288C2574000E5FCF /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB5402288C2574000E5FCF /* Confetti.swift */; };
 		C5DB5405288C48FD000E5FCF /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB5404288C48FD000E5FCF /* RewardView.swift */; };
+		C5E0EE2E2892419D0063E0A1 /* LearningDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */; };
+		C5E0EE332892999F0063E0A1 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0EE322892999F0063E0A1 /* EmptyStateView.swift */; };
+		C5E677CB288E960A00134109 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E677CA288E960A00134109 /* TaskViewModel.swift */; };
+		C5E677CD288E985F00134109 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E677CC288E985F00134109 /* Helper.swift */; };
+		C5E677D0288ED6E100134109 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E677CF288ED6E100134109 /* AppState.swift */; };
+		C5F218D0288EE5D3007285E0 /* view-hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F218CF288EE5D3007285E0 /* view-hidden.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +82,19 @@
 		C547C086288D301D0085FDDE /* CatGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGallery.swift; sourceTree = "<group>"; };
 		C547C089288D32280085FDDE /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		C547C08E288D40020085FDDE /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
+		C547C090288D70160085FDDE /* Alert+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+TextField.swift"; sourceTree = "<group>"; };
+		C56229A3289162E400FC181B /* LearningEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LearningEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C56229A4289162E400FC181B /* LearningEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LearningEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C56229A5289162E400FC181B /* CatGalleryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatGalleryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C56229A6289162E400FC181B /* CatGalleryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatGalleryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C56229A7289162E400FC181B /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C56229A8289162E400FC181B /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C56229AF289163BE00FC181B /* CatDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDisplayView.swift; sourceTree = "<group>"; };
+		C56229B12891661F00FC181B /* CatGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGalleryViewModel.swift; sourceTree = "<group>"; };
+		C56229B42891680C00FC181B /* CatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPI.swift; sourceTree = "<group>"; };
+		C56229B728916B0600FC181B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C56229B928916FC200FC181B /* CatAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIManager.swift; sourceTree = "<group>"; };
+		C56229BB28918A5400FC181B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C563E554288A99D800F06EB8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGalleryView.swift; sourceTree = "<group>"; };
 		C563E559288A9F1E00F06EB8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,10 +105,8 @@
 		C563E566288BE45700F06EB8 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		C572A4C62888ECEC002C2238 /* Catet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C572A4C92888ECEC002C2238 /* CatetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetApp.swift; sourceTree = "<group>"; };
-		C572A4CB2888ECEC002C2238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C572A4CD2888ECEE002C2238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C572A4D22888ECEE002C2238 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C572A4DB2888ECEF002C2238 /* CatetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C572A4DF2888ECEF002C2238 /* CatetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetTests.swift; sourceTree = "<group>"; };
 		C572A4E52888ECEF002C2238 /* CatetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,10 +116,18 @@
 		C572A4FE288980F9002C2238 /* TopBarLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarLearningView.swift; sourceTree = "<group>"; };
 		C572A50128899468002C2238 /* LearningCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCardView.swift; sourceTree = "<group>"; };
 		C572A50528899F3E002C2238 /* ProgressArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressArc.swift; sourceTree = "<group>"; };
+		C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C57CFA0D289028BD00FDCB0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DB53FC288BF57E000E5FCF /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		C5DB53FF288C1FED000E5FCF /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
 		C5DB5402288C2574000E5FCF /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
 		C5DB5404288C48FD000E5FCF /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningDAO.swift; sourceTree = "<group>"; };
+		C5E0EE322892999F0063E0A1 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		C5E677CA288E960A00134109 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		C5E677CC288E985F00134109 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C5E677CF288ED6E100134109 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C5F218CF288EE5D3007285E0 /* view-hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "view-hidden.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,20 +158,17 @@
 		C547C081288D2EEC0085FDDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C547C088288D321C0085FDDE /* CoreDataModel */,
+				C56229A3289162E400FC181B /* LearningEntity+CoreDataClass.swift */,
+				C56229A4289162E400FC181B /* LearningEntity+CoreDataProperties.swift */,
+				C56229A5289162E400FC181B /* CatGalleryEntity+CoreDataClass.swift */,
+				C56229A6289162E400FC181B /* CatGalleryEntity+CoreDataProperties.swift */,
+				C56229A7289162E400FC181B /* TaskEntity+CoreDataClass.swift */,
+				C56229A8289162E400FC181B /* TaskEntity+CoreDataProperties.swift */,
 				C547C082288D2F270085FDDE /* Learning.swift */,
 				C547C084288D2FDA0085FDDE /* Task.swift */,
 				C547C086288D301D0085FDDE /* CatGallery.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C547C088288D321C0085FDDE /* CoreDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				C547C089288D32280085FDDE /* CoreDataHelper.swift */,
-			);
-			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 		C547C08C288D3FE50085FDDE /* ViewModel */ = {
@@ -147,7 +182,9 @@
 		C547C08D288D3FED0085FDDE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C563E55C288ACD8600F06EB8 /* LearningDetailView.swift */,
 				C572A4FC28897A1D002C2238 /* LearningView.swift */,
+				C5E0EE322892999F0063E0A1 /* EmptyStateView.swift */,
 				C572A50128899468002C2238 /* LearningCardView.swift */,
 				C572A50528899F3E002C2238 /* ProgressArc.swift */,
 				C572A4FE288980F9002C2238 /* TopBarLearningView.swift */,
@@ -155,10 +192,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C56229B32891680300FC181B /* CatAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C56229B42891680C00FC181B /* CatAPI.swift */,
+			);
+			path = CatAPI;
+			sourceTree = "<group>";
+		};
+		C56229B628916A4C00FC181B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C56229B32891680300FC181B /* CatAPI */,
+				C56229B728916B0600FC181B /* ImageLoader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		C563E553288A999400F06EB8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				C563E554288A99D800F06EB8 /* Theme.swift */,
+				C5E677CC288E985F00134109 /* Helper.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -166,18 +221,22 @@
 		C563E558288A9F0200F06EB8 /* CatGallery */ = {
 			isa = PBXGroup;
 			children = (
+				C56229B628916A4C00FC181B /* Networking */,
 				C563E556288A9EFE00F06EB8 /* CatGalleryView.swift */,
+				C56229B12891661F00FC181B /* CatGalleryViewModel.swift */,
+				C56229AF289163BE00FC181B /* CatDisplayView.swift */,
 			);
 			path = CatGallery;
 			sourceTree = "<group>";
 		};
-		C563E55B288ACD7700F06EB8 /* LearningDetail */ = {
+		C563E55B288ACD7700F06EB8 /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				C563E55C288ACD8600F06EB8 /* LearningDetailView.swift */,
-				C563E561288B0BD700F06EB8 /* TaskView.swift */,
+				C5DB53FE288BF586000E5FCF /* TaskDetail */,
+				C57CFA0A288FDC2900FDCB0D /* View */,
+				C57CFA09288FDC1B00FDCB0D /* ViewModel */,
 			);
-			path = LearningDetail;
+			path = Task;
 			sourceTree = "<group>";
 		};
 		C563E55E288AD53700F06EB8 /* UIHelper */ = {
@@ -185,16 +244,11 @@
 			children = (
 				C563E55F288AD55100F06EB8 /* UIAppearanceHelper.swift */,
 				C5DB53FC288BF57E000E5FCF /* TextView.swift */,
+				C547C090288D70160085FDDE /* Alert+TextField.swift */,
+				C5F218CF288EE5D3007285E0 /* view-hidden.swift */,
+				C56229BB28918A5400FC181B /* LoadingView.swift */,
 			);
 			path = UIHelper;
-			sourceTree = "<group>";
-		};
-		C563E563288BCC6F00F06EB8 /* AddTask */ = {
-			isa = PBXGroup;
-			children = (
-				C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */,
-			);
-			path = AddTask;
 			sourceTree = "<group>";
 		};
 		C572A4BD2888ECEC002C2238 = {
@@ -220,20 +274,14 @@
 		C572A4C82888ECEC002C2238 /* Catet */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */,
+				C5E0EE30289290350063E0A1 /* Services */,
+				C5E0EE2F289290110063E0A1 /* Features */,
+				C5E677CE288ED69E00134109 /* Utilities */,
 				C547C081288D2EEC0085FDDE /* Model */,
-				C5DB5407288C490B000E5FCF /* Reward */,
 				C5DB5401288C1FF4000E5FCF /* Completion */,
-				C5DB53FE288BF586000E5FCF /* TaskDetail */,
-				C563E563288BCC6F00F06EB8 /* AddTask */,
-				C563E55E288AD53700F06EB8 /* UIHelper */,
-				C563E55B288ACD7700F06EB8 /* LearningDetail */,
-				C563E558288A9F0200F06EB8 /* CatGallery */,
-				C563E553288A999400F06EB8 /* Constants */,
-				C572A50028899449002C2238 /* Learning */,
 				C572A4C92888ECEC002C2238 /* CatetApp.swift */,
-				C572A4CB2888ECEC002C2238 /* ContentView.swift */,
 				C572A4CD2888ECEE002C2238 /* Assets.xcassets */,
-				C572A4D22888ECEE002C2238 /* Persistence.swift */,
 				C547C07E288D20270085FDDE /* Catet.xcdatamodeld */,
 				C572A4CF2888ECEE002C2238 /* Preview Content */,
 				C563E559288A9F1E00F06EB8 /* MainView.swift */,
@@ -275,6 +323,23 @@
 			path = Learning;
 			sourceTree = "<group>";
 		};
+		C57CFA09288FDC1B00FDCB0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5E677CA288E960A00134109 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C57CFA0A288FDC2900FDCB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C563E561288B0BD700F06EB8 /* TaskView.swift */,
+				C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C5DB53FE288BF586000E5FCF /* TaskDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +351,7 @@
 		C5DB5401288C1FF4000E5FCF /* Completion */ = {
 			isa = PBXGroup;
 			children = (
+				C5DB5407288C490B000E5FCF /* Reward */,
 				C5DB53FF288C1FED000E5FCF /* CompletionView.swift */,
 				C5DB5402288C2574000E5FCF /* Confetti.swift */,
 			);
@@ -298,6 +364,37 @@
 				C5DB5404288C48FD000E5FCF /* RewardView.swift */,
 			);
 			path = Reward;
+			sourceTree = "<group>";
+		};
+		C5E0EE2F289290110063E0A1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C563E558288A9F0200F06EB8 /* CatGallery */,
+				C563E55B288ACD7700F06EB8 /* Task */,
+				C572A50028899449002C2238 /* Learning */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C5E0EE30289290350063E0A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C547C089288D32280085FDDE /* CoreDataHelper.swift */,
+				C56229B928916FC200FC181B /* CatAPIManager.swift */,
+				C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5E677CE288ED69E00134109 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C57CFA0D289028BD00FDCB0D /* AppDelegate.swift */,
+				C563E55E288AD53700F06EB8 /* UIHelper */,
+				C563E553288A999400F06EB8 /* Constants */,
+				C5E677CF288ED6E100134109 /* AppState.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,27 +528,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				C547C087288D301D0085FDDE /* CatGallery.swift in Sources */,
+				C56229B0289163BE00FC181B /* CatDisplayView.swift in Sources */,
 				C563E567288BE45700F06EB8 /* TaskDetailView.swift in Sources */,
+				C57CFA0E289028BD00FDCB0D /* AppDelegate.swift in Sources */,
 				C547C08F288D40020085FDDE /* LearningViewModel.swift in Sources */,
 				C563E560288AD55100F06EB8 /* UIAppearanceHelper.swift in Sources */,
+				C547C091288D70160085FDDE /* Alert+TextField.swift in Sources */,
 				C563E562288B0BD700F06EB8 /* TaskView.swift in Sources */,
+				C56229AE289162E400FC181B /* TaskEntity+CoreDataProperties.swift in Sources */,
 				C5DB5405288C48FD000E5FCF /* RewardView.swift in Sources */,
+				C5E0EE332892999F0063E0A1 /* EmptyStateView.swift in Sources */,
+				C56229AD289162E400FC181B /* TaskEntity+CoreDataClass.swift in Sources */,
 				C547C085288D2FDA0085FDDE /* Task.swift in Sources */,
+				C56229BA28916FC200FC181B /* CatAPIManager.swift in Sources */,
 				C5DB5403288C2574000E5FCF /* Confetti.swift in Sources */,
 				C563E555288A99D800F06EB8 /* Theme.swift in Sources */,
+				C56229B828916B0600FC181B /* ImageLoader.swift in Sources */,
 				C547C083288D2F270085FDDE /* Learning.swift in Sources */,
+				C56229AC289162E400FC181B /* CatGalleryEntity+CoreDataProperties.swift in Sources */,
+				C56229AB289162E400FC181B /* CatGalleryEntity+CoreDataClass.swift in Sources */,
 				C572A4FF288980F9002C2238 /* TopBarLearningView.swift in Sources */,
-				C572A4D32888ECEE002C2238 /* Persistence.swift in Sources */,
+				C56229A9289162E400FC181B /* LearningEntity+CoreDataClass.swift in Sources */,
+				C5F218D0288EE5D3007285E0 /* view-hidden.swift in Sources */,
 				C5DB5400288C1FED000E5FCF /* CompletionView.swift in Sources */,
-				C572A4CC2888ECEC002C2238 /* ContentView.swift in Sources */,
+				C57CFA0C2890184C00FDCB0D /* NotificationManager.swift in Sources */,
+				C56229BC28918A5400FC181B /* LoadingView.swift in Sources */,
+				C5E677D0288ED6E100134109 /* AppState.swift in Sources */,
+				C56229B22891661F00FC181B /* CatGalleryViewModel.swift in Sources */,
+				C5E0EE2E2892419D0063E0A1 /* LearningDAO.swift in Sources */,
 				C563E557288A9EFE00F06EB8 /* CatGalleryView.swift in Sources */,
+				C56229B52891680C00FC181B /* CatAPI.swift in Sources */,
 				C563E55D288ACD8600F06EB8 /* LearningDetailView.swift in Sources */,
 				C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */,
+				C5E677CB288E960A00134109 /* TaskViewModel.swift in Sources */,
 				C572A4FD28897A1D002C2238 /* LearningView.swift in Sources */,
 				C5DB53FD288BF57E000E5FCF /* TextView.swift in Sources */,
+				C5E677CD288E985F00134109 /* Helper.swift in Sources */,
 				C547C08A288D32280085FDDE /* CoreDataHelper.swift in Sources */,
 				C547C080288D20270085FDDE /* Catet.xcdatamodeld in Sources */,
 				C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */,
+				C56229AA289162E400FC181B /* LearningEntity+CoreDataProperties.swift in Sources */,
 				C563E55A288A9F1E00F06EB8 /* MainView.swift in Sources */,
 				C572A50228899468002C2238 /* LearningCardView.swift in Sources */,
 				C572A50628899F3E002C2238 /* ProgressArc.swift in Sources */,
