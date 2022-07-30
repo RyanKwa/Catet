@@ -15,25 +15,29 @@ class CoreDataHelper{
     
     init(){
         container = NSPersistentContainer(name: "Catet")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Core data cannot be load \(error.localizedDescription)")
+            }
+        }
         viewContext = container.viewContext
     }
     
     // Create background context to be used with core data operation
     func getBackgroundContext() -> NSManagedObjectContext {
         if let context = container?.newBackgroundContext() {
+            print("NEw bg context")
             return context
         } else {
+            print("existing context")
             return viewContext
         }
     }
 
     // Call save context when changes happen in core data
-    func saveContext(context: NSManagedObjectContext? = nil){
-        guard let context = context else{
-            return
-        }
+    func saveContext(){
         do{
-            try context.save()
+            try viewContext.save()
         }
         catch{
             print("Error Saving CoreData \(error.localizedDescription)")
