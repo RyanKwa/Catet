@@ -34,6 +34,8 @@
 		C563E562288B0BD700F06EB8 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E561288B0BD700F06EB8 /* TaskView.swift */; };
 		C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */; };
 		C563E567288BE45700F06EB8 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563E566288BE45700F06EB8 /* TaskDetailView.swift */; };
+		C56A773528955D9900A863A1 /* TaskDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A773428955D9900A863A1 /* TaskDAO.swift */; };
+		C56A77382895700E00A863A1 /* CatGalleryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A77372895700E00A863A1 /* CatGalleryDAO.swift */; };
 		C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A4C92888ECEC002C2238 /* CatetApp.swift */; };
 		C572A4CE2888ECEE002C2238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4CD2888ECEE002C2238 /* Assets.xcassets */; };
 		C572A4D12888ECEE002C2238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C572A4D02888ECEE002C2238 /* Preview Assets.xcassets */; };
@@ -103,6 +105,8 @@
 		C563E561288B0BD700F06EB8 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		C563E564288BCC7900F06EB8 /* AddTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSheet.swift; sourceTree = "<group>"; };
 		C563E566288BE45700F06EB8 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		C56A773428955D9900A863A1 /* TaskDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDAO.swift; sourceTree = "<group>"; };
+		C56A77372895700E00A863A1 /* CatGalleryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGalleryDAO.swift; sourceTree = "<group>"; };
 		C572A4C62888ECEC002C2238 /* Catet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C572A4C92888ECEC002C2238 /* CatetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatetApp.swift; sourceTree = "<group>"; };
 		C572A4CD2888ECEE002C2238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -251,9 +255,19 @@
 			path = UIHelper;
 			sourceTree = "<group>";
 		};
+		C56A773628955DA000A863A1 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				C56A773428955D9900A863A1 /* TaskDAO.swift */,
+				C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
 		C572A4BD2888ECEC002C2238 = {
 			isa = PBXGroup;
 			children = (
+				C56A77372895700E00A863A1 /* CatGalleryDAO.swift */,
 				C572A4C82888ECEC002C2238 /* Catet */,
 				C572A4DE2888ECEF002C2238 /* CatetTests */,
 				C572A4E82888ECEF002C2238 /* CatetUITests */,
@@ -274,7 +288,7 @@
 		C572A4C82888ECEC002C2238 /* Catet */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0EE2D2892419D0063E0A1 /* LearningDAO.swift */,
+				C56A773628955DA000A863A1 /* DAO */,
 				C5E0EE30289290350063E0A1 /* Services */,
 				C5E0EE2F289290110063E0A1 /* Features */,
 				C5E677CE288ED69E00134109 /* Utilities */,
@@ -557,6 +571,7 @@
 				C56229B22891661F00FC181B /* CatGalleryViewModel.swift in Sources */,
 				C5E0EE2E2892419D0063E0A1 /* LearningDAO.swift in Sources */,
 				C563E557288A9EFE00F06EB8 /* CatGalleryView.swift in Sources */,
+				C56A77382895700E00A863A1 /* CatGalleryDAO.swift in Sources */,
 				C56229B52891680C00FC181B /* CatAPI.swift in Sources */,
 				C563E55D288ACD8600F06EB8 /* LearningDetailView.swift in Sources */,
 				C572A4CA2888ECEC002C2238 /* CatetApp.swift in Sources */,
@@ -567,6 +582,7 @@
 				C547C08A288D32280085FDDE /* CoreDataHelper.swift in Sources */,
 				C547C080288D20270085FDDE /* Catet.xcdatamodeld in Sources */,
 				C563E565288BCC7900F06EB8 /* AddTaskSheet.swift in Sources */,
+				C56A773528955D9900A863A1 /* TaskDAO.swift in Sources */,
 				C56229AA289162E400FC181B /* LearningEntity+CoreDataProperties.swift in Sources */,
 				C563E55A288A9F1E00F06EB8 /* MainView.swift in Sources */,
 				C572A50228899468002C2238 /* LearningCardView.swift in Sources */,

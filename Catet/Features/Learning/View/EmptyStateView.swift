@@ -32,7 +32,7 @@ struct EmptyStateView: View {
                     .padding(20)
                 Group{
                     Text("Looks like you currently have no tasks")
-                    Text("How about add some tasks to achieve your goal?")
+                    Text("Let's add some task")
                 }
                 .foregroundColor(Color(red: 0, green: 0, blue: 0, opacity: 0.6))
             }

@@ -28,27 +28,29 @@ struct LearningDetailView: View {
         
         VStack {
             Form {
+                    Section {
+                        if editMode == .active {
+                            TextField(learning.wrappedGoal, text: $goalDescription)
+                                .lineLimit(1)
+                        }
+                        else{
+                            Text(goalDescription)
+                                .lineLimit(1)
+                        }
+                    } header: {
+                        Text("My Goal")
+                            .font(.system(size: 24))
+                            .foregroundColor(.black)
+                            .bold()
+                            .textCase(.none)
+                            .padding(.leading, -20)
+                    }
+
                 //MARK: MY Goal text field refactor if dalam section
-                Section {
-                    if editMode == .active {
-                        TextField(learning.wrappedGoal, text: $goalDescription)
-                            .lineLimit(1)
-                    }
-                    else if editMode == .inactive {
-                        Text(goalDescription)
-                            .lineLimit(1)
-                    }
-                } header: {
-                    Text("My Goal")
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .bold()
-                        .textCase(.none)
-                        .padding(.leading, -20)
-                }
                 //MARK: MY Task list
 
                 Section {
+                    
                     if taskVM.taskList.count == 0 {
                         EmptyStateView(emptyStateFor: .task)
                     }
@@ -60,6 +62,7 @@ struct LearningDetailView: View {
                             NavigationLink(destination: TaskDetailView(taskVM: taskVM,task: taskData, taskTitle: taskData.wrappedTitle).accentColor(Color(Theme.accentColor.rawValue))) {
                                 TaskView(task: taskData, taskVM: taskVM).disabled(learningCompleted)
                                     .swipeActions(allowsFullSwipe: false) {
+                                        
                                     Button(role: .destructive) {
                                         print("Delete")
                                         showDeleteAlert.toggle()
@@ -77,7 +80,6 @@ struct LearningDetailView: View {
                             print("UPdate")
                             print(source)
                             print(dest)
-                            
                         }
                         //MARK: Delete Task
                         .alert("Delete Task", isPresented: $showDeleteAlert, actions: {
@@ -125,13 +127,17 @@ struct LearningDetailView: View {
                     }
                 }.listRowBackground(taskVM.taskList.count > 0 ? Color.white : Color.clear)
             }
+            
+            
             //MARK: Edit Button
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton().isHidden(learningCompleted)
                 }
             }.environment(\.editMode, $editMode)
-                .navigationTitle("\(learning.wrappedTitle)")
+            .navigationTitle("\(learning.wrappedTitle)")
+
+
         }
         //MARK: Completion Page
         .background{
@@ -142,7 +148,7 @@ struct LearningDetailView: View {
         .background(Color(uiColor: UIColor.systemGray5))
         .onAppear{
             UIAppearanceHelper.setupNavigationTitle(withColor: .white)
-            print("\(editMode)")
+            print("EditMODE: \(editMode)")
             taskVM.currentLearning(learning: learning)
             taskVM.fetchTasks()
         }

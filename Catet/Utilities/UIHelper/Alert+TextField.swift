@@ -55,7 +55,7 @@ struct AlertControllerView: UIViewControllerRepresentable{
                         return
                     }
                     learning.title = learningTitleTextField
-                    learningViewModel.renameLearning(learning: learning)
+                    learningViewModel.renameLearning(learning: learning, newTitle: learningTitleTextField)
                 }
                 
             }
