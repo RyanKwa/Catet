@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct TaskView: View {
-    @State var taskCompleted = false
+    
+    @State var task: TaskEntity
+    @ObservedObject var taskVM: TaskViewModel
+    
     var body: some View {
         HStack {
             ZStack{
                 Button {
                     print("Checklist")
-                    taskCompleted.toggle()
+                    taskVM.updateTaskCompletion(for: task)
                 } label: {
-                    if taskCompleted {
+                    if task.hasFinished {
                         Image(systemName: "checkmark.square.fill")
                             .font(.system(size: 24))
                             .foregroundColor(Color(Theme.accentColor.rawValue))
@@ -26,14 +29,20 @@ struct TaskView: View {
                             .font(.system(size: 24))
                             .foregroundColor(Color(Theme.accentColor.rawValue))
                     }
-                }.buttonStyle(PlainButtonStyle())
+                }
+                .buttonStyle(PlainButtonStyle())
                 .padding(.trailing, 5)
             }
             VStack(alignment: .leading){
                 Spacer()
-                Text("Learn CoreData concept")
+                Text(task.wrappedTitle)
                 Spacer()
-                Text("22/07/2022 07:00 PM")
+                if let taskReminder = task.wrappedReminder {
+                    Text(Helper.dateToString(date: taskReminder))
+                }
+                else{
+                    Text("")
+                }
                 Spacer()
             }
             Spacer()
@@ -44,7 +53,7 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView()
+        TaskView(task: TaskEntity(), taskVM: TaskViewModel())
             .previewLayout(.fixed(width: UIScreen.main.bounds.size.width, height: 54))
     }
 }
