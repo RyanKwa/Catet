@@ -40,7 +40,12 @@ struct CompletionView: View {
                     HStack{
                         Spacer()
                         Button {
-                            isActive = true
+                            if catGalleryVM.catDataFromAPI.isEmpty {
+                                isActive = false
+                            }
+                            else {
+                                isActive = true
+                            }
                         } label: {
                             HStack{
                                 Text("Next")

@@ -29,12 +29,6 @@ struct CatGalleryView: View {
                         }
                     }
                 }
-//                Button(action: {
-//                    catGalleryVM.removeCatGallery()
-//                }, label: {
-//                    Text("Delete catos")
-//                })
-
             }
             .padding()
             .onAppear{

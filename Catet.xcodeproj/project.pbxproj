@@ -48,6 +48,7 @@
 		C572A50628899F3E002C2238 /* ProgressArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572A50528899F3E002C2238 /* ProgressArc.swift */; };
 		C57CFA0C2890184C00FDCB0D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */; };
 		C57CFA0E289028BD00FDCB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CFA0D289028BD00FDCB0D /* AppDelegate.swift */; };
+		C5B4D24E29963FB300285628 /* CatAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4D24D29963FB300285628 /* CatAPIEndpoints.swift */; };
 		C5DB53FD288BF57E000E5FCF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FC288BF57E000E5FCF /* TextView.swift */; };
 		C5DB5400288C1FED000E5FCF /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB53FF288C1FED000E5FCF /* CompletionView.swift */; };
 		C5DB5403288C2574000E5FCF /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB5402288C2574000E5FCF /* Confetti.swift */; };
@@ -122,6 +123,7 @@
 		C572A50528899F3E002C2238 /* ProgressArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressArc.swift; sourceTree = "<group>"; };
 		C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		C57CFA0D289028BD00FDCB0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5B4D24D29963FB300285628 /* CatAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIEndpoints.swift; sourceTree = "<group>"; };
 		C5DB53FC288BF57E000E5FCF /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		C5DB53FF288C1FED000E5FCF /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
 		C5DB5402288C2574000E5FCF /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				C547C089288D32280085FDDE /* CoreDataHelper.swift */,
 				C56229B928916FC200FC181B /* CatAPIManager.swift */,
 				C57CFA0B2890184C00FDCB0D /* NotificationManager.swift */,
+				C5B4D24D29963FB300285628 /* CatAPIEndpoints.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				C57CFA0E289028BD00FDCB0D /* AppDelegate.swift in Sources */,
 				C547C08F288D40020085FDDE /* LearningViewModel.swift in Sources */,
 				C563E560288AD55100F06EB8 /* UIAppearanceHelper.swift in Sources */,
+				C5B4D24E29963FB300285628 /* CatAPIEndpoints.swift in Sources */,
 				C547C091288D70160085FDDE /* Alert+TextField.swift in Sources */,
 				C563E562288B0BD700F06EB8 /* TaskView.swift in Sources */,
 				C56229AE289162E400FC181B /* TaskEntity+CoreDataProperties.swift in Sources */,

@@ -11,11 +11,11 @@ class CatAPIManager {
     static let instance = CatAPIManager()
     
     func fetchCat(breed: String, onCompletion: @escaping ([CatAPI]) -> ()){
-        let url = URL(string: "https://api.thecatapi.com/v1/images/search?breed_ids=\(breed)")
+        let url = URL(string: "\(CatAPIEndpoints.BREED_ENDPOINT)=\(breed)")
         if let unwrappedURL = url {
             var request = URLRequest(url: unwrappedURL)
             //MARK: add http header for API auth
-            request.addValue("2b67ad33-18f8-4076-9262-1e629b1dda75", forHTTPHeaderField: "x-api-key")
+            request.addValue(CatAPIEndpoints.API_KEY, forHTTPHeaderField: "x-api-key")
             request.httpMethod = "GET"
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
 
